@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME_NEXT }}
           password: ${{ secrets.SFTP_PASSWORD_NEXT }}
           localPath: .next
-          remotePath: /path/to/remote/directory
+          remotePath: /
           exclude: .git/**/*
