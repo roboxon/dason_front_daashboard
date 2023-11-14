@@ -1,0 +1,38 @@
+name: Deploy to Remote Server
+
+on:
+  push:
+    branches:
+      - deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: |
+          npm install
+
+      - name: Build Next.js App
+        run: |
+          npm run build
+
+      - name: Deploy to Remote Server via SFTP
+        uses: SamKirkland/SFTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.SFTP_SERVER_NEXT }}
+          port: ${{ secrets.SFTP_PORT_NEXT }}
+          username: ${{ secrets.SFTP_USERNAME_NEXT }}
+          password: ${{ secrets.SFTP_PASSWORD_NEXT }}
+          localPath: .next
+          remotePath: /path/to/remote/directory
+          exclude: .git/**/*
