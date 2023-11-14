@@ -1,13 +1,12 @@
 import LoginForm from "@/app/components/forms/Login";
-import Title from "@/app/components/forms/Title";
-import { Fragment } from "react";
+import { useAppSelector } from "@/app/redux/store";
+import { resource } from "@/public/data/resource";
 
 const Login = () => {
   return (
-    <Fragment>
+    <div>
       <LoginForm />
-      <Title />
-    </Fragment>
+    </div>
   );
 };
 

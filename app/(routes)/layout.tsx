@@ -20,9 +20,11 @@ export default function RootLayout({
       <body>
         <ToastifayContainer>
           <ReduxProvider>
-            <Header />
-            <main className="min-h-[100vh]">{children}</main>
-            <Footer />
+            <main className="min-h-[100vh] flex flex-col justify-between">
+              <Header />
+              {children}
+              <Footer />
+            </main>
           </ReduxProvider>
         </ToastifayContainer>
       </body>

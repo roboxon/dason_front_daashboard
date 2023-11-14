@@ -27,7 +27,7 @@ export const resource = {
       },
     ],
     login: {
-      title: "",
+      title: "Login",
     },
     register: {
       title: "Create Account",
@@ -60,6 +60,12 @@ export const resource = {
         link: "/register",
       },
     ],
+    login: {
+      title: "Login",
+    },
+    register: {
+      title: "Create Account",
+    },
   },
   de: {
     navigation: [
@@ -88,5 +94,11 @@ export const resource = {
         link: "/register",
       },
     ],
+    login: {
+      title: "Login",
+    },
+    register: {
+      title: "Create Account",
+    },
   },
 };

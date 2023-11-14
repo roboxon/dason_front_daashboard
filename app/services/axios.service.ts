@@ -10,9 +10,6 @@ export const axiosService = (service: string, payload: object) => {
   axios
     .post(`https://apilogin.das-on.com/${service}`, formData)
     .then((res) => {
-      console.log(res);
-
-      
       toast(res.data.http_message, {
         hideProgressBar: true,
         autoClose: 2000,
