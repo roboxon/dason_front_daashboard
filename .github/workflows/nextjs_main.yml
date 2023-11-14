@@ -29,10 +29,16 @@ jobs:
       - name: Deploy to Remote Server via SFTP
         uses: SamKirkland/SFTP-Deploy-Action@4.0.0
         with:
+          exclude: |
+            **/node_modules/**
+            **/.git
+            **/.github
+            ./tests/**
+            ./app/**
+            ./node_modules/**
           server: ${{ secrets.SFTP_SERVER_NEXT }}
           port: ${{ secrets.SFTP_PORT_NEXT }}
           username: ${{ secrets.SFTP_USERNAME_NEXT }}
           password: ${{ secrets.SFTP_PASSWORD_NEXT }}
           localPath: .next
           remotePath: /
-          exclude: .git/**/*
