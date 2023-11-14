@@ -16,7 +16,7 @@ jobs:
       - name: Set Up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 18
 
       - name: Install Dependencies
         run: |
@@ -27,12 +27,12 @@ jobs:
           npm run build
 
       - name: Deploy to Remote Server via SFTP
-        uses: SamKirkland/SFTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.SFTP_SERVER_NEXT }}
-          port: ${{ secrets.SFTP_PORT_NEXT }}
           username: ${{ secrets.SFTP_USERNAME_NEXT }}
           password: ${{ secrets.SFTP_PASSWORD_NEXT }}
+          protocol: ftps
           localPath: .next
-          remotePath: /
           exclude: .git/**/*
+          port: 21
