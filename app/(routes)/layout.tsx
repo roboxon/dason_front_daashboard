@@ -22,7 +22,9 @@ export default function RootLayout({
           <ReduxProvider>
             <main className="min-h-[100vh] flex flex-col justify-between">
               <Header />
-              {children}
+              <div className="pl-3 pr.3 ">
+                {children}
+              </div>
               <Footer />
             </main>
           </ReduxProvider>

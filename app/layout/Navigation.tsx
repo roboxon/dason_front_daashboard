@@ -10,11 +10,11 @@ const Navigation = () => {
   const data = resource[languageShortCode.shortCode as keyof typeof resource];
 
   return (
-    <div className="navbar bg-base-100">
-        <ul className="menu menu-horizontal px-1">
+    <div className="navbar">
+        <ul className="menu menu-horizontal px-3 ">
           {data.navigation.map((item, index) => (
             <li key={index}>
-              <Link href={item.link}>{item.title}</Link>
+              <Link href={item.link} className="hover:text-green-600 hover:bg-white  ">{item.title}</Link>
             </li>
           ))}
         </ul>

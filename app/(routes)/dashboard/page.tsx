@@ -1,5 +1,5 @@
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  return <div>Cookie Policy</div>;
 };
 
 export default Dashboard;

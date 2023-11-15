@@ -5,7 +5,7 @@ import { resource } from "@/public/data/resource";
 const Login = () => {
   return (
     <div>
-      <LoginForm />
+      Privacy Policy
     </div>
   );
 };

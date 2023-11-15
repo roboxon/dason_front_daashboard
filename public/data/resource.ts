@@ -2,28 +2,20 @@ export const resource = {
   en: {
     navigation: [
       {
-        title: "Home",
+        title: "Login/Register",
         link: "/",
       },
       {
-        title: "Dashboard",
-        link: "/dashboard",
+        title: "About Das-On",
+        link: "/about",
       },
       {
-        title: "Admin",
-        link: "/admin",
+        title: "Privacy Policy",
+        link: "/privacy-policy",
       },
       {
-        title: "Analytics",
-        link: "/analytics",
-      },
-      {
-        title: "Login",
-        link: "/login",
-      },
-      {
-        title: "Register",
-        link: "/register",
+        title: "Cookie Policy",
+        link: "/cookie-policy",
       },
     ],
     login: {
@@ -40,24 +32,16 @@ export const resource = {
         link: "/",
       },
       {
-        title: "داشبورد",
-        link: "/dashboard",
+        title: "Das-On درباره ",
+        link: "/about",
       },
       {
-        title: "ادمین",
-        link: "/admin",
+        title: "سیاست حفظ حریم خصوصی",
+        link: "/privacy-policy",
       },
       {
-        title: "آنالیتیک",
-        link: "/analytics",
-      },
-      {
-        title: "ورود",
-        link: "/login",
-      },
-      {
-        title: "ثبت نام",
-        link: "/register",
+        title: "سیاست کوکی",
+        link: "/cookie-policy",
       },
     ],
     login: {
@@ -70,28 +54,20 @@ export const resource = {
   de: {
     navigation: [
       {
-        title: "Home",
+        title: "Anmeldung / Registrieren",
         link: "/",
       },
       {
-        title: "Dashboard",
-        link: "/dashboard",
+        title: "Über Das-On",
+        link: "/about",
       },
       {
-        title: "Admin",
-        link: "/admin",
+        title: "Datenschutz",
+        link: "/privacy-policy",
       },
       {
-        title: "Analytics",
-        link: "/analytics",
-      },
-      {
-        title: "Login",
-        link: "/login",
-      },
-      {
-        title: "Register",
-        link: "/register",
+        title: "Cookie-Richtlinie",
+        link: "/cookie-policy",
       },
     ],
     login: {
